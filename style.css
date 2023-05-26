@@ -18,7 +18,7 @@
   
   /* Styles pour la bannière */
   .banner {
-    background-color: #00122c;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
   }
@@ -34,8 +34,8 @@
   }
   
   nav {
-    background-color: #001c44;
-    width: 170px;
+    background-color: #0f0f0f;
+    width: 220px;
   }
   
   nav ul {
@@ -51,7 +51,7 @@
   nav ul li a,
   .container section a {
       text-decoration: none;
-      color: #8ddbff;
+      color: #b5e7ff;
   }
   
   nav ul li a:hover {
@@ -62,13 +62,13 @@
   section {
     padding: 20px;
     flex: 1;
-    background-color: #00205a;
+    background-color: #1f1f1f;
     color: #ffffff;
   }
   
   /* Styles pour le pied de page */
   footer {
-    background-color: #00122c;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
     text-align: center;
