@@ -1,4 +1,9 @@
 
+document.getElementById('toggleSidebar').addEventListener('click', function() {
+  document.querySelector('.sidebar').classList.toggle('active');
+});
+
+
 function checkPassword() {
   var password = prompt("Veuillez entrer le mot de passe :");
   
@@ -10,3 +15,4 @@ function checkPassword() {
     alert("Mot de passe incorrect. Veuillez réessayer.");
   }
 }
+
