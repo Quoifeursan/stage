@@ -55,6 +55,10 @@ nav ul li a,
     color: #c7effc;
 }
 
+nav ul li p{
+ color: #ffffff;
+}
+
 nav ul li a:hover {
   color: #ff0000; /* Rouge */
 }
