@@ -41,6 +41,7 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
+  color: #ffffff
 }
 
 nav ul li {
@@ -51,7 +52,7 @@ nav ul li {
 nav ul li a,
 .container section a {
     text-decoration: none;
-    color: #ffffff;
+    color: #c7effc;
 }
 
 nav ul li a:hover {
