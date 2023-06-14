@@ -78,3 +78,14 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+table th,
+table td {
+  border: 1px solid #000;
+  padding: 10px;
+}
