@@ -1,13 +1,35 @@
 /* Réinitialisation des styles par défaut */
+
+
+
+
+
+
+@font-face {
+  font-family: '1';
+  src: url('alphbeta.woff') format('woff');
+}
+
+
+:root {
+  --colorB: #E9E5DA;
+  --accent-color: #3177e700;
+  --colorA: #325E8D;
+  --link-color: #78e4f5;
+  --link-hover-color: #002fff;
+  --nwar: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", sans-serif;
 }
 
-html, body {
+body {
+  font-family: '1', sans-serif;
   height: 100%;
+  animation: changeBackgroundColor 5s infinite;
 }
 
 .wrapper {
@@ -18,9 +40,13 @@ html, body {
 
 /* Styles pour la bannière */
 .banner {
-  background-color: #000000;
-  color: #fff;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--colorB);
+  color: var(--colorA);
+  padding: 4px;
+  border-right: solid var(--colorB) 4px;
 }
 
 .banner h1 {
@@ -33,50 +59,72 @@ html, body {
   display: flex;
 }
 
-nav {
-  background-color: #0f0f0f;
+.nav {
+  background-color: var(--colorA);
+  border-right: solid var(--colorB) 4px;
+  border-left: solid var(--colorB) 4px;
   width: 220px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  color: #ffffff
-}
-
-nav ul li {
-  padding: 10px;
   
 }
 
-nav ul li a,
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  color: var(--colorB);
+}
+
+.nav ul li {
+  padding: 10px;
+}
+
+
+
 .container section a {
-    text-decoration: none;
-    color: #78e4f5;
+  text-decoration: none;
+  color: var(--link-color);
 }
 
-nav ul li p{
- color: #cccccc;
+.nav ul li a {
+  color: var(--link-color);
+  text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: #ff0000; /* Rouge */
+.nav ul li a:hover {
+  color: var(--link-hover-color);
 }
 
 /* Styles pour le contenu principal */
-section {
+.section {
   padding: 20px;
   flex: 1;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: var(--colorA);
+  border: solid var(--accent-color) 4px;
+  color: var(--colorB);
+ 
+  
 }
 
+.section a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.section a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+
+
+
+
 /* Styles pour le pied de page */
-footer {
-  background-color: #000000;
-  color: #fff;
+.footer {
+  background-color: var(--colorA);
+  color: var(--colorB);
   padding: 20px;
   text-align: center;
+  border: solid var(--colorB) 4px;
 }
 
 table {
@@ -89,3 +137,5 @@ table td {
   border: 1px solid #000;
   padding: 10px;
 }
+
+
