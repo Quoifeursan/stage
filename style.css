@@ -2,20 +2,55 @@
 
 
 
+@keyframes changeBorderColor {
+  0% {
+    border-color: #ff0000; /* Rouge */
+  }
+  25% {
+    border-color: #00ff00; /* Vert */
+  }
+  50% {
+    border-color: #0000ff; /* Bleu */
+  }
+  75% {
+    border-color: #ffff00; /* Jaune */
+  }
+  100% {
+    border-color: #ff0000; /* Magenta */
+  }
+}
 
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #000000; /* Rouge */
+  }
+  25% {
+    background-color: #03002c; /* Vert */
+  }
+  50% {
+    background-color: #000000; /* Bleu */
+  }
+  75% {
+    background-color: #200023; /* Jaune */
+  }
+  100% {
+    background-color: #000000; /* Magenta */
+  }
+}
 
 
 @font-face {
   font-family: '1';
-  src: url('alphbeta.woff') format('woff');
+  src: url('Queensides-3z7Ey.ttf') format('truetype');
 }
 
 
 :root {
-  --colorB: #E9E5DA;
+  --colorA: #E9E5DA;
   --accent-color: #3177e700;
-  --colorA: #325E8D;
+  --colorB: #251f60;
   --link-color: #78e4f5;
+  --colorC: #78e4f5;
   --link-hover-color: #ff0000;
   --nwar: #000000;
 }
@@ -29,7 +64,7 @@
 body {
   font-family: '1', sans-serif;
   height: 100%;
-  animation: changeBackgroundColor 5s infinite;
+  animation: changeBackgroundColor 10s infinite;
 }
 
 .wrapper {
@@ -47,6 +82,7 @@ body {
   color: var(--colorA);
   padding: 4px;
   border-right: solid var(--colorB) 4px;
+  border-radius: 5px;
 }
 
 .banner h1 {
@@ -57,11 +93,9 @@ body {
 .container {
   flex: 1;
   display: flex;
-  border: solid var(--colorB) 4px;
 }
 
 .nav {
-  background-color: var(--colorA);
 
   
   width: 220px;
@@ -98,9 +132,9 @@ body {
 .section {
   padding: 20px;
   flex: 1;
-  background-color: var(--colorA);
+ 
   
-  color: var(--colorB);
+  color: var(--colorC);
  
   
 }
@@ -122,7 +156,7 @@ body {
 /* Styles pour le pied de page */
 .footer {
   background-color: var(--colorA);
-  color: var(--colorB);
+  color: var(--colorC);
   padding: 20px;
   text-align: center;
   
@@ -141,9 +175,12 @@ table td {
 
 .win{
   border: solid var(--colorB) 4px;
+  border-radius: 10px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  padding-bottom: 10px;
+  animation: changeBorderColor 5s infinite;
 }
 .win p, a{
   padding: 10px;
@@ -152,9 +189,12 @@ table td {
 
 .win1{
   border: solid var(--colorB) 4px;
+  border-radius: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  padding-bottom: 10px;
+  animation: changeBorderColor 5s infinite;
 }
 .win1 p, a{
   padding: 10px;
@@ -163,10 +203,12 @@ table td {
 
 .winNavbar{
   border: solid var(--colorB) 4px;
+  border-radius: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
   padding-bottom: 10px;
+  animation: changeBorderColor 5s infinite;
 }
 .winNavbar p, a{
   padding: 10px;
@@ -174,6 +216,7 @@ table td {
 
 .winMid{
   border: solid var(--colorB) 4px;
+  border-radius: 10px;
   margin: 50%;
   padding-bottom: 10px;
 }
@@ -192,6 +235,9 @@ table td {
 	left: 50%;
 	transform: translate(-50%, -50%);
   background-color: var(--colorA);
+  border-radius: 10px;
+  padding-bottom: 10px;
+  animation: changeBorderColor 5s infinite;
 
 
 	border: solid var(--colorB) 4px;
@@ -229,3 +275,5 @@ table td {
   z-index: 2;
   transition: opacity 1s ease;
 }
+
+
