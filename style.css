@@ -4,38 +4,39 @@
 
 @keyframes changeBorderColor {
   0% {
-    border-color: #ff0000; /* Rouge */
+    border-color: #ffffff; /* Rouge */
   }
   25% {
-    border-color: #00ff00; /* Vert */
+    border-color: #ffffff; /* Vert */
   }
   50% {
-    border-color: #0000ff; /* Bleu */
+    border-color: #ffffff; /* Bleu */
   }
   75% {
-    border-color: #ffff00; /* Jaune */
+    border-color: #ffffff; /* Jaune */
   }
   100% {
-    border-color: #ff0000; /* Magenta */
+    border-color: #ffffff; /* Magenta */
   }
 }
 
 @keyframes changeBackgroundColor {
   0% {
-    background-color: #000000; /* Rouge */
+    border-color: #000; /* Rouge */
   }
   25% {
-    background-color: #03002c; /* Vert */
+    border-color: #000; /* Vert */
   }
   50% {
-    background-color: #000000; /* Bleu */
+    border-color: #000; /* Bleu */
   }
   75% {
-    background-color: #200023; /* Jaune */
+    border-color: #000; /* Jaune */
   }
   100% {
-    background-color: #000000; /* Magenta */
+    border-color: #000; /* Magenta */
   }
+ 
 }
 
 
@@ -48,9 +49,9 @@
 :root {
   --colorA: #E9E5DA;
   --accent-color: #3177e700;
-  --colorB: #251f60;
-  --link-color: #78e4f5;
-  --colorC: #78e4f5;
+  --colorB: #000000;
+  --link-color: #ffffff;
+  --colorC: #000000;
   --link-hover-color: #ff0000;
   --nwar: #000000;
 }
@@ -72,6 +73,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 
 /* Styles pour la bannière */
 .banner {
